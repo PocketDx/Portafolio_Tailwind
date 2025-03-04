@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Portafolio</title>
+</head>
+<body class="bg-blue-200">
+
+    <!--Contenedor Principal-->
+    <div class="flex flex-col justify-center m-2 p-2">
+        
+        <!--Seccion Perfil-->
+        <section class="flex justify-between rounded-xl m-2 p-3 bg-gray-100 transition ease-out duration-700 hover:bg-orange-400 transform hover:scale-105">
+            <!--Div para el texto justificado a la derecha-->
+            <div>
+                <h1 class="text-2xl text-black font-bold">Javier Rodriguez</h1>
+                <em class="text-gray-600">Desarrollador Web Full Stack</em>
+            </div>
+            <!--Div para el circulo con el emoji-->
+            <div class="rounded-full bg-slate-500 h-20 w-20 p-5">
+            <p class="text-3xl">👨🏻‍💻</p>
+        </div>
+        </section>
+        
+        <!--Seccion Proyectos-->
+        <section class="rounded-xl m-2 p-3 bg-gray-200 transition ease-out duration-700 hover:bg-blue-400 transform hover:scale-105">
+            <h2 class="text-2xl font-bold w-full">Proyectos</h2>
+            <!--Flexbox de Proyectos-->
+            <div class="flex flex-wrap gap-3">
+                <!--Proyecto 1-->
+                <div class="flex justify-start bg-white rounded-xl m-1 p-2 grow gap-2">
+                    <div class="rounded-full bg-blue-300 h-12 w-12 text-center text-xl p-2">🎻</div>
+                    <div class="bg-gray-300 rounded-lg px-3">
+                        <h3 class="font-bold">Proyecto 1</h3>
+                        <p>Alineado a la izquierda</p>
+                    </div>
+                </div>
+                <!--Proyecto 2-->
+                <div class="flex justify-center bg-white rounded-xl m-1 p-2 grow gap-2">
+                 <div class="rounded-full bg-blue-300 h-12 w-12 text-center text-xl p-2">🎮</div>
+                    <div class="bg-gray-300 rounded-lg px-3">
+                        <h3 class="font-bold">Proyecto 2</h3>
+                        <p>Centrado horizontalmente</p>
+                    </div>
+                </div>
+                <!--Proyecto 3-->
+                <div class="flex justify-end bg-white rounded-xl m-1 p-2 gap-2 grow">
+                    <div class="rounded-full bg-blue-300 h-12 w-12 text-center text-xl p-2">🎺</div>
+                    <div class="bg-gray-300 rounded-lg px-3">
+                        <h3 class="font-bold">Proyecto 3</h3>
+                        <p>Alineado a la derecha</p>
+                    </div>
+                </div>
+                <!--Proyecto 4-->
+                <div class="flex justify-between bg-white rounded-xl m-1 p-2 gap-2 grow">
+                    <div class="rounded-full bg-blue-300 h-12 w-12 text-center text-xl p-2">🔊</div>
+                    <div class="bg-gray-300 rounded-lg px-3">
+                        <h3 class="font-bold">Proyecto 4</h3>
+                        <p>Espacio entre elementos</p>
+                    </div>
+                </div>
+                <!--Proyecto 5, En este componente algo parece no cuadrar-->
+                <div class="flex justify-start bg-white rounded-xl m-1 p-2 gap-2 grow">
+                    <div class="rounded-full bg-blue-300 h-12 w-12 text-center text-xl p-2">💎</div>
+                    <div class="bg-gray-300 rounded-lg px-3">
+                        <h3 class="font-bold">Proyecto 5</h3>
+                        <p>Espacio uniforme alrededor</p>
+                    </div>
+                </div>
+                <!--Proyecto 6-->
+                <div class="flex justify-evenly bg-white rounded-xl m-1 p-2 gap-2 grow">
+                    <div class="rounded-full bg-blue-300 h-12 w-12 text-center text-xl p-2">✂</div>
+                    <div class="bg-gray-300 rounded-lg px-3">
+                        <h3 class="font-bold">Proyecto 6</h3>
+                        <p>Distribución equitativa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Retos Adicionales-->
+        <section class="m-2 p-2 bg-gray-300 rounded-xl transition ease-out duration-700 hover:bg-red-400 transform hover:scale-105">
+            <h3 class="text-2xl font-bold">🎯 Retos Adicionales</h3>
+            <ul>
+                <li><span class="font-bold">Reto 1:</span> Agrega una nueva fila de proyectos con imagenes reales en lugar de emojis. Una <em class="bg-white font-mono">img</em> dentro de un <em class="bg-white font-mono">div</em></li>
+                <li><span class="font-bold">Reto 2:</span> Cambia la alineación de los textos en los proyectos usando <em class="bg-white font-mono">text-left</em>, <em class="bg-white font-mono">text-center</em> y <em class="bg-white font-mono">text-right</em></li>
+                <li><span class="font-bold">Reto 3:</span> Haz que la sección de proyectos use <em class="bg-white font-mono">flex-wrap</em> en lugar de grid y ajusta el diseño.</li>
+                <li><span class="font-bold">Reto 4:</span> Agrega un botón debajo de cada proyecto con la clase <em class="bg-white font-mono">bg-blue-500 text-white px-4 py-2 rounded</em> que diga "Ver Más"</li>
+            </ul>
+
+        </section>
+
+        <!--Proyectos Reto #1-->
+        <section class="m-2 p-2 bg-slate-400 rounded-xl transition ease-out duration-700 hover:bg-green-500 transform hover:scale-105">
+            <h4 class="text-2xl font-bold">🥇 Reto 1</h4>
+            <!--Flexbox de Proyectos-->
+            <div class="flex flex-wrap gap-3">
+                <!--Proyecto 1-->
+                <div class="flex justify-start bg-white rounded-xl m-1 p-2 grow gap-2">
+                    <div class="rounded-full bg-blue-300 h-12 w-12 text-center text-xl p-2">
+                        <img src="https://icones.pro/wp-content/uploads/2021/05/icone-html-verte.png" alt="icono">
+                    </div>
+                    <div class="bg-gray-300 rounded-lg px-3">
+                        <h3 class="font-bold">Proyecto R1</h3>
+                        <p>Alineado a la izquierda</p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded">Ver Más</button>
+                    </div>
+                </div>
+                <!--Proyecto 2-->
+                <div class="flex justify-center bg-white rounded-xl m-1 p-2 grow gap-2">
+                 <div class="rounded-full bg-blue-300 h-12 w-12 text-center text-xl p-2">
+                    <img src="https://icones.pro/wp-content/uploads/2021/02/logo-icone-instagram.png" alt="icono2">
+                 </div>
+                    <div class="bg-gray-300 rounded-lg px-3">
+                        <h3 class="font-bold">Proyecto R2</h3>
+                        <p>Centrado horizontalmente</p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Proyectos Reto #2-->
+        <section class="m-2 p-2 bg-slate-400 rounded-xl transition ease-out duration-700 hover:bg-green-500 transform hover:scale-105">
+            <h4 class="text-2xl font-bold">🔥 Reto 2</h4>
+            <!--Flexbox de Proyectos-->
+            <div class="flex flex-wrap gap-3">
+                <!--Proyecto 1-->
+                <div class="flex justify-start bg-white rounded-xl m-1 p-2 grow gap-2">
+                    <div class="rounded-full bg-blue-300 h-12 w-12 text-center text-xl p-2">
+                        <img src="https://icones.pro/wp-content/uploads/2021/05/icone-html-verte.png" alt="icono">
+                    </div>
+                    <div class="bg-gray-300 rounded-lg grow">
+                        <h3 class="font-bold">Proyecto R3</h3>
+                        <p class="text-left">Alineado a la izquierda</p>
+                        <p class="text-center">Centrado</p>
+                        <p class="text-right">Alineado a la derecha</p>
+                        <button class="bg-blue-500 text-white m-2 px-4 py-2 rounded">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="flex flex-col items-center p-1 m-2 bg-gray-900 text-white rounded-lg transition ease-out duration-700 hover:bg-red-900 transform hover:scale-105">
+                <h2 class="font-bold text-xl">Contacto</h2>
+                <p>📧 Email: <span class="text-green-500">dairojavierrg@ufps.edu.co</span></p>
+                <p>📍 Ubicación: <span class="text-yellow-300">Cúcuta, Colombia</span></p>
+                <div class="flex-row">
+                    <button class="rounded px-4 py-2 bg-fuchsia-500 hover:bg-black text-white font-bold"><a href="https://github.com/PocketDx">Github</a></button>
+                    <button class="rounded px-4 py-2 bg-blue-500 hover:bg-red-400 text-white font-bold"><a href="https://www.linkedin.com/in/djrodriguezgomez/">LinkedIn</a></button>
+                    <button class="rounded px-4 py-2 bg-blue-700 hover:bg-gray-600 text-white font-bold">Twitter</button>
+                </div>
+                <p>Derechos de Autor 2025 ©</p>
+        </footer>
+    </div>
+</body>
+</html>
